@@ -6,21 +6,21 @@ iniciar():-
     write("Bienvenido a Translog"),nl,
     write("Por Favor indique a que idioma quiere traducir "),
     write("(Utilice {esp} para espanol y {eng} para ingles) :"),
-    revisarIdioma(LENG),
+    revisarIdioma(),
     write("Muy bien, indique lo que desea traducir: "),
     readln(SENTENCE,_,_,_,lowercase),
     write(SENTENCE),!.
 
 %Revisa que el idioma ingresado por el usuario sea valido
-revisarIdioma(LENG):-
+revisarIdioma():-
     read_line_to_string(user_input,S1),
     string_lower(S1, RESPUESTA),
     member(RESPUESTA, ["esp", "eng"]),!.
 
 %Cuando la funcion anterior falla, ejecuta esta para pedir nuevamente un idioma al usuario
-revisarIdioma(LENG):-
+revisarIdioma():-
     write("Idioma invalido, reingrese su respuesta: "),
-    revisarIdioma(LENG),!.
+    revisarIdioma(),!.
 
 %BuscarIdioma: busca si el idioma ingresado por el usuario es valido.
 buscarIdioma(RESPUESTA,LENGB):-
