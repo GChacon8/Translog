@@ -25,7 +25,7 @@ determinante-->[unas].
 
 %Preposiciones
 preposiciones-->[].
-preposiciones-->[a].
+
 preposiciones-->[ante].
 preposiciones-->[bajo].
 preposiciones-->[cabe].
@@ -45,8 +45,8 @@ preposiciones-->[sin].
 preposiciones-->[sobre].
 preposiciones-->[tras].
 preposiciones-->[versus].
-preposiciones-->[via].
-preposiciones-->[so].
+
+
 
 %verbos
 verbo-->[].
