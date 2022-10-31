@@ -1,6 +1,6 @@
-oracion(oracion(SN,SV))-->sn(SN), sv(SV).  
+oracion(oracion(SN,SV))-->sn(SN), sv(SV).
 sn(sn(DETERMINANTE,SUSTANTIVO)) --> determinante(DETERMINANTE), sustantivo(SUSTANTIVO).
-sv(sv(VERBO,SN)) --> verbo(VERBO), sn(SN).
+sv(sv(VERBO,PREPOSICIONES,SN)) --> verbo(VERBO),preposiciones(PREPOSICIONES), sn(SN).
 
 
 %Puntuacion
@@ -23,51 +23,51 @@ determinante(determinante(n))-->[unas].
 
 %Preposiciones
 
-preposiciones-->[a].
-preposiciones-->[ante].
-preposiciones-->[bajo].
-preposiciones-->[cabe].
-preposiciones-->[con].
-preposiciones-->[contra].
-preposiciones-->[de].
-preposiciones-->[desde].
-preposiciones-->[durante].
-preposiciones-->[en].
-preposiciones-->[entre].
-preposiciones-->[hacia].
-preposiciones-->[hasta].    
-preposiciones-->[mediante].
-preposiciones-->[para].
-preposiciones-->[por].
-preposiciones-->[sin].
-preposiciones-->[sobre].
-preposiciones-->[tras].
-preposiciones-->[versus].
-preposiciones-->[via].
-preposiciones-->[so].
-preposiciones-->[].
+preposiciones(preposiciones(p))-->[a].
+preposiciones(preposiciones(p))-->[ante].
+preposiciones(preposiciones(p))-->[bajo].
+preposiciones(preposiciones(p))-->[cabe].
+preposiciones(preposiciones(p))-->[con].
+preposiciones(preposiciones(p))-->[contra].
+preposiciones(preposiciones(p))-->[de].
+preposiciones(preposiciones(p))-->[desde].
+preposiciones(preposiciones(p))-->[durante].
+preposiciones(preposiciones(p))-->[en].
+preposiciones(preposiciones(p))-->[entre].
+preposiciones(preposiciones(p))-->[hacia].
+preposiciones(preposiciones(p))-->[hasta].    
+preposiciones(preposiciones(p))-->[mediante].
+preposiciones(preposiciones(p))-->[para].
+preposiciones(preposiciones(p))-->[por].
+preposiciones(preposiciones(p))-->[sin].
+preposiciones(preposiciones(p))-->[sobre].
+preposiciones(preposiciones(p))-->[tras].
+preposiciones(preposiciones(p))-->[versus].
+preposiciones(preposiciones(p))-->[via].
+preposiciones(preposiciones(p))-->[so].
+preposiciones(preposiciones(p))-->[].
 
 %verbos
 verbo(verbo(v))-->[].
-verbo(verbo(X))-->[X],{member(X,[ir,va,voy,vamos,van])}.
-%verbo-->[ir];[va];[voy];[vamos];[van].
-%verbo-->[ser];[soy];[es];[somos];[son].
-%verbo-->[estar];[estoy];[estas];[estamos];[estan].
-%verbo-->[tener];[tengo];[tiene];[tenemos];[tienen].
-%verbo-->[hablar];[hablo];[habla]:[hablamos];[hablan].
-%verbo-->[decir];[digo];[dice];[decimos];[dicen].
-%verbo-->[sentir];[siento];[siente];[sentimos];[sienten].
-%verbo-->[tomar];[tomo];[toma];[tomamos];[toman].
-%verbo-->[ver];[veo];[ve];[vemos];[ven].
-%verbo-->[caminar];[camino];[camina];[caminamos];[caminan].
+%verbo(verbo(v))(verbo(X))-->[X],{member(X,[ir,va,voy,vamos,van])}.
+verbo(verbo(v))-->[ir];[va];[voy];[vamos];[van].
+verbo(verbo(v))-->[ser];[soy];[es];[somos];[son].
+verbo(verbo(v))-->[estar];[estoy];[estas];[estamos];[estan].
+verbo(verbo(v))-->[tener];[tengo];[tiene];[tenemos];[tienen].
+verbo(verbo(v))-->[hablar];[hablo];[habla]:[hablamos];[hablan].
+verbo(verbo(v))-->[decir];[digo];[dice];[decimos];[dicen].
+verbo(verbo(v))-->[sentir];[siento];[siente];[sentimos];[sienten].
+verbo(verbo(v))-->[tomar];[tomo];[toma];[tomamos];[toman].
+verbo(verbo(v))-->[ver];[veo];[ve];[vemos];[ven].
+verbo(verbo(v))-->[caminar];[camino];[camina];[caminamos];[caminan].
 
 %sustantivos
 
 sustantivo(sustantivo(s))-->[].
 
 %animales
-sustantivo(sustantivo(perro))-->[perro].
-sustantivo(sustantivo(gato))-->[gato].
+sustantivo(sustantivo(s))-->[perro].
+sustantivo(sustantivo(s))-->[gato].
 sustantivo(sustantivo(s))-->[rata].
 sustantivo(sustantivo(s))-->[pez].
 sustantivo(sustantivo(s))-->[raton].
@@ -87,30 +87,30 @@ sustantivo(sustantivo(s))-->[hermano].
 sustantivo(sustantivo(s))-->[hermana].
 
 
-%sustantivo(sustantivo(s))-->[amor].
-%sustantivo(sustantivo(s))-->[accion].
-%sustantivo(sustantivo(s))-->[edad].
-%sustantivo(sustantivo(s))-->[aire].
-%sustantivo(sustantivo(s))-->[animal].
-%sustantivo(sustantivo(s))-->[respuesta].
-%sustantivo(sustantivo(s))-->[manzana].
-%sustantivo(sustantivo(s))-->[arte].
-%sustantivo(sustantivo(s))-->[bebe].
-%sustantivo(sustantivo(s))-->[espalda].
-%sustantivo(sustantivo(s))-->[bola].
-%sustantivo(sustantivo(s))-->[banco].
-%sustantivo(sustantivo(s))-->[cama].
-%sustantivo(sustantivo(s))-->[factura].
-%sustantivo(sustantivo(s))-->[sangre].
-%sustantivo(sustantivo(s))-->[barco].
-%sustantivo(sustantivo(s))-->[cuerpo].
-%sustantivo(sustantivo(s))-->[hueso].
-%sustantivo(sustantivo(s))-->[libro].
-%sustantivo(sustantivo(s))-->[caja].
-%sustantivo(sustantivo(s))-->[hermano].
-%sustantivo(sustantivo(s))-->[edificio].
-%sustantivo(sustantivo(s))-->[negocio].
-%sustantivo(sustantivo(s))-->[llamada].
+sustantivo(sustantivo(s))-->[amor].
+sustantivo(sustantivo(s))-->[accion].
+sustantivo(sustantivo(s))-->[edad].
+sustantivo(sustantivo(s))-->[aire].
+sustantivo(sustantivo(s))-->[animal].
+sustantivo(sustantivo(s))-->[respuesta].
+sustantivo(sustantivo(s))-->[manzana].
+sustantivo(sustantivo(s))-->[arte].
+sustantivo(sustantivo(s))-->[bebe].
+sustantivo(sustantivo(s))-->[espalda].
+sustantivo(sustantivo(s))-->[bola].
+sustantivo(sustantivo(s))-->[banco].
+sustantivo(sustantivo(s))-->[cama].
+sustantivo(sustantivo(s))-->[factura].
+sustantivo(sustantivo(s))-->[sangre].
+sustantivo(sustantivo(s))-->[barco].
+sustantivo(sustantivo(s))-->[cuerpo].
+sustantivo(sustantivo(s))-->[hueso].
+sustantivo(sustantivo(s))-->[libro].
+sustantivo(sustantivo(s))-->[caja].
+sustantivo(sustantivo(s))-->[hermano].
+sustantivo(sustantivo(s))-->[edificio].
+sustantivo(sustantivo(s))-->[negocio].
+sustantivo(sustantivo(s))-->[llamada].
 
 %Pronombres
 
@@ -159,3 +159,4 @@ adverbio-->[mal].
 adverbio-->[bastante].
 adverbio-->[ayer].
 adverbio-->[hoy].
+ 
