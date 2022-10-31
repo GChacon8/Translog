@@ -55,7 +55,7 @@ verbo-->[ir];[va];[voy];[vamos];[van].
 verbo-->[ser];[soy];[es];[somos];[son].
 verbo-->[estar];[estoy];[estas];[estamos];[estan].
 verbo-->[tener];[tengo];[tiene];[tenemos];[tienen].
-verbo-->[hablar];[hablo];[habla];[hablamos];[hablan].
+verbo-->[hablar];[hablo];[habla]:[hablamos];[hablan].
 verbo-->[decir];[digo];[dice];[decimos];[dicen].
 verbo-->[sentir];[siento];[siente];[sentimos];[sienten].
 verbo-->[tomar];[tomo];[toma];[tomamos];[toman].
