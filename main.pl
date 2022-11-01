@@ -8,39 +8,46 @@ Salida: va llamando las funciones que corresponden a cada una de las preguntas.
 
 iniciar():-
     write("Bienvenido a Translog"),nl,
-    write("Por Favor indique a que idioma quiere traducir "),
-    write("(Utilice {esp} para espanol y {eng} para ingles) :"),
-    revisarIdioma(),
-    write("Muy bien, indique lo que desea traducir: "),
+    write("Por Favor indique a que idioma quiere traducir"), nl,
+    write("(Utilice 1 para espanol y 2 para ingles) :"),
+    revisarIdioma(RESPUESTA),
+    write("Muy bien, indique la palabra u oracion que desea traducir: "),
     readln(SENTENCE,_,_,_,lowercase),
-    write(SENTENCE),!.
-
-traducir(ESPANOL, INGLES):-
-    engtoesp(INGLES, ESPANOL).
+    ( RESPUESTA=:=1 -> %Si RESPUESTA ES 1 (ESPAÑOL)
+    traducir(SENTENCE, ESP),
+    write("La traduccion es: "),
+    write(ESP)
+    ; RESPUESTA =:=2 -> %Si RESPUESTA ES 2 (Inglés)
+    traducir(ENG, SENTENCE),
+    write("La traduccion es: "),
+    write(ENG))
+    ; %Ninguna de las dos anteriores se cumple
+    write("ERROR"),!.
 
 imprimir(RESPUESTA):-
     write(RESPUESTA).
 
-
 %Revisa que el idioma ingresado por el usuario sea valido
-
-revisarIdioma():-
+revisarIdioma(RESPUESTA):-
     read_line_to_string(user_input,S1),
-    string_lower(S1, RESPUESTA),
-    member(RESPUESTA, ["esp", "eng"]),!.
+    %string_lower(S1, NUMBER),
+    number_string(RESPUESTA,S1),
+    member(RESPUESTA, [1, 2]),!.
 
 %Cuando la funcion anterior falla, ejecuta esta para pedir nuevamente un idioma al usuario
-revisarIdioma():-
+revisarIdioma(RESPUESTA):-
     write("Idioma invalido, reingrese su respuesta: "),
-    revisarIdioma(),!.
+    revisarIdioma(RESPUESTA),!.
 
-%BuscarIdioma: busca si el idioma ingresado por el usuario es valido.
-buscarIdioma(RESPUESTA,LENGB):-
-    member(LENGB,RESPUESTA),!.
+%traducir: Recibe una lista con los elementos a traducir, los traduce y regresa otra lista con los elementos traducidos.
+traducir(ENG, ESP) :-
+    maplist(engtoesp, ENG, ESP).
 
+/*
 iniciar2():-
     write("Escriba una palabra"),
     readln(ORACION,_,_,_,lowercase),
     oracion(ORACION, []),
     traducir(ORACION, TRADUCCION),
     imprimir(TRADUCCION).
+*/
