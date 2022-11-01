@@ -7,15 +7,15 @@ sv --> verb, prepositions, verb, sn.
 %Punctuation
 punctuation-->[,];[].
 
-% determinants
+% determiners
 determiner-->[].
 determiner-->[the].
-determinant-->[of].
+determiner-->[of].
 determiner-->[to the].
 determiner-->[it].
-determinant-->[a].
-determinant-->[an].
-determinant-->[some].
+determiner-->[a].
+determiner-->[an].
+determiner-->[some].
 
 %Prepositions
 prepositions-->[].
@@ -96,7 +96,7 @@ noun-->[call].
 %Pronouns
 
 pronoun-->[].
-pronoun-->[I].
+pronoun-->[i].
 pronoun-->[you].
 pronoun-->[the].
 pronoun-->[she].
