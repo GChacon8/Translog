@@ -19,9 +19,9 @@ determiner-->[some].
 
 %Prepositions
 prepositions-->[].
-prepositions-->[before].
-prepositions-->[low].
-prepositions-->[it fits].
+prepositions-->[facing].
+prepositions-->[under].
+prepositions-->[fits].
 prepositions-->[with].
 prepositions-->[against].
 prepositions-->[of].
@@ -29,13 +29,14 @@ prepositions-->[from].
 prepositions-->[during].
 prepositions-->[in].
 prepositions-->[between].
-prepositions-->[towards].
+prepositions-->[to].
 prepositions-->[until].
+prepositions-->[through].
 prepositions-->[for].
 prepositions-->[by].
 prepositions-->[without].
 prepositions-->[about].
-prepositions-->[after].
+prepositions-->[behind].
 prepositions-->[versus].
 
 %verbs
