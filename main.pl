@@ -1,5 +1,6 @@
 :-consult(gramatica).
 :-consult(diccionario).
+:-consult(grammar).
 /*Función iniciar: esta función da inicio a la secuencia que hará las preguntas al usuario.
  *
 Entrada: ninguna.

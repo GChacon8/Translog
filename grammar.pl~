@@ -11,7 +11,7 @@ punctuation-->[,];[].
 determiner-->[].
 determiner-->[the].
 determiner-->[of].
-determiner-->[tothe].
+determiner-->[to the].
 determiner-->[it].
 determiner-->[a].
 determiner-->[an].
@@ -133,7 +133,7 @@ adverb-->[yes].
 adverb-->[certainly].
 adverb-->[never].
 adverb--> [never].
-adverb-->[lots].
+adverb-->[a lot].
 adverb-->[little].
 adverb-->[less].
 adverb-->[nothing].
