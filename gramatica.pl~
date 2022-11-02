@@ -1,8 +1,7 @@
-oracion(oracion(SN,SV))-->sn(SN,_Gen2,Num),sv(SV,Num).
+oracion(s(S,V,O))-->sn(S,N),verbo(V,N),sn2(O,_).
 %oracion-->pronombre,sv(_Num).
-sn(sn(DET,N),Gen,Num) --> determinante(DET,Gen,Num),sustantivo(N,Gen,Num).
-sn2(Gen,Num) --> determinante(Gen,Num),sustantivo2(N,Gen,Num).
-sv(Num) --> verbo(Num),preposiciones, sn2(_Gen,_Num2).
+sn(np(M,S),N) --> determinante(M,G,N),sustantivo(S,G,N).
+sn2(np(M2,S2),N2) --> determinante(M2,G2,N2),sustantivo2(S2,G2,N2).
 %sv(Num) --> verbo(Num),preposiciones,verbo(Num), sn(Num).
 
 
@@ -10,21 +9,21 @@ sv(Num) --> verbo(Num),preposiciones, sn2(_Gen,_Num2).
 %puntuacion-->[,];[].
 
 %determinantes
-determinante(m,pl)-->[].
-determinante(m,sg)-->[].
-determinante(f,pl)-->[].
-determinante(f,sg)-->[].
-determinante(m,sg)-->[el].
-determinante(m,sg)-->[del].
-determinante(f,sg)-->[la].
-determinante(f,pl)-->[las].
-determinante(f,sg)-->[al].
-determinante(m,sg)-->[lo].
-determinante(m,pl)-->[los].
-determinante(m,sg)-->[un].
-determinante(f,sg)-->[una].
-determinante(m,pl)-->[unos].
-determinante(f,pl)-->[unas].
+determinante(m(art),m,pl)-->[].
+determinante(m(art),m,sg)-->[].
+determinante(m(art),f,pl)-->[].
+determinante(m(art),f,sg)-->[].
+determinante(m(art),m,sg)-->[el].
+determinante(m(art),m,sg)-->[del].
+determinante(m(art),f,sg)-->[la].
+determinante(m(art),f,pl)-->[las].
+determinante(m(art),f,sg)-->[al].
+determinante(m(art),m,sg)-->[lo].
+determinante(m(art),m,pl)-->[los].
+determinante(m(art),m,sg)-->[un].
+determinante(m(art),f,sg)-->[una].
+determinante(m(art),m,pl)-->[unos].
+determinante(m(art),f,pl)-->[unas].
 
 
 %Preposiciones
@@ -53,84 +52,84 @@ preposiciones-->[versus].
 
 
 %verbos
-verbo(sg)-->[].
-verbo(pl)-->[].
+verbo(v(v_1),sg)-->[].
+verbo(v(v_1),pl)-->[].
 %verbo(verbo(X))-->[X],{member(X,[ir,va,voy,vamos,van])}.
-verbo(sg)-->[ir];[va];[voy];[vamos];[van].
-verbo(sg)-->[ser];[soy];[es];[somos];[son].
-verbo(sg)-->[estar];[estoy];[estas];[estamos];[estan].
-verbo(sg)-->[tener];[tengo];[tiene];[tenemos];[tienen].
-verbo(sg)-->[hablar];[hablo];[habla];[hablamos];[hablan].
-verbo(sg)-->[decir];[digo];[dice];[decimos];[dicen].
-verbo(sg)-->[sentir];[siento];[siente];[sentimos];[sienten].
-verbo(sg)-->[tomar];[tomo];[toma];[tomamos];[toman].
-verbo(sg)-->[ver];[veo];[ve];[vemos];[ven].
-verbo(sg)-->[caminar];[camino];[camina];[caminamos];[caminan].
+verbo(v(v_2),sg)-->[ir];[va];[voy];[vamos];[van].
+verbo(v(v_3),sg)-->[ser];[soy];[es];[somos];[son].
+verbo(v(v_4),sg)-->[estar];[estoy];[estas];[estamos];[estan].
+verbo(v(v_5),sg)-->[tener];[tengo];[tiene];[tenemos];[tienen].
+verbo(v(v_6),sg)-->[hablar];[hablo];[habla];[hablamos];[hablan].
+verbo(v(v_7),sg)-->[decir];[digo];[dice];[decimos];[dicen].
+verbo(v(v_8),sg)-->[sentir];[siento];[siente];[sentimos];[sienten].
+verbo(v(v_9),sg)-->[tomar];[tomo];[toma];[tomamos];[toman].
+verbo(v(v_10),sg)-->[ver];[veo];[ve];[vemos];[ven].
+verbo(v(v_11),sg)-->[caminar];[camino];[camina];[caminamos];[caminan].
 
 %sustantivos
 
-sustantivo2(m,sg)-->[].
-sustantivo2(m,pl)-->[].
-sustantivo2(f,sg)-->[].
-sustantivo2(f,pl)-->[].
+sustantivo2(n(n_1),m,sg)-->[].
+sustantivo2(n(n_1),m,pl)-->[].
+sustantivo2(n(n_1),f,sg)-->[].
+sustantivo2(n(n_1),f,pl)-->[].
 
-sustantivo2(m,sg)-->sustantivo(m,sg).
-sustantivo2(m,pl)-->sustantivo(m,pl).
-sustantivo2(f,sg)-->sustantivo(f,sg).
-sustantivo2(f,pl)-->sustantivo(f,pl).
+sustantivo2(n(n_2),m,sg)-->sustantivo(m,sg).
+sustantivo2(n(n_2),m,pl)-->sustantivo(m,pl).
+sustantivo2(n(n_2),f,sg)-->sustantivo(f,sg).
+sustantivo2(n(n_2),f,pl)-->sustantivo(f,pl).
 
 
 
 %animales
-sustantivo(m,sg)-->[perro].
-sustantivo(m,pl)-->[perros].
-sustantivo(f,sg)-->[perra].
-sustantivo(f,pl)-->[perras].
+sustantivo(n(n_3),m,sg)-->[perro].
+sustantivo(n(n_44),m,pl)-->[perros].
+sustantivo(n(n_45),f,sg)-->[perra].
+sustantivo(n(n_46),f,pl)-->[perras].
 
-sustantivo(m,sg)-->[gato].
-sustantivo(f,sg)-->[rata].
-sustantivo(m,sg)-->[pez].
-sustantivo(m,sg)-->[raton].
-sustantivo(f,sg)-->[ave].
+sustantivo(n(n_4),m,sg)-->[gato].
+sustantivo(n(n_5),f,sg)-->[rata].
+sustantivo(n(n_6),m,sg)-->[pez].
+sustantivo(n(n_7),m,sg)-->[raton].
+sustantivo(n(n_8),f,sg)-->[ave].
 
 %personas
-sustantivo(m,sg)-->[joven].
-sustantivo(m,sg)-->[hijo].
-sustantivo(f,sg)-->[hija].
-sustantivo(f,sg)-->[mama].
-sustantivo(m,sg)-->[papa].
-sustantivo(m,sg)-->[nino].
-sustantivo(f,sg)-->[nina].
-sustantivo(m,sg)-->[abuelo].
-sustantivo(f,sg)-->[abuela].
-sustantivo(m,sg)-->[hermano].
-sustantivo(f,sg)-->[hermana].
+sustantivo(n(n_9),m,sg)-->[joven].
+sustantivo(n(n_10),m,sg)-->[hijo].
+sustantivo(n(n_11),f,sg)-->[hija].
+sustantivo(n(n_12),f,sg)-->[mama].
+sustantivo(n(n_13),m,sg)-->[papa].
+sustantivo(n(n_14),m,sg)-->[nino].
+sustantivo(n(n_15),f,sg)-->[nina].
+sustantivo(n(n_16),m,sg)-->[abuelo].
+sustantivo(n(n_17),f,sg)-->[abuela].
+sustantivo(n(n_18),m,sg)-->[hermano].
+sustantivo(n(n_19),f,sg)-->[hermana].
 
 
-sustantivo(m,sg)-->[amor].
-sustantivo(f,sg)-->[accion].
-sustantivo(f,sg)-->[edad].
-sustantivo(m,sg)-->[aire].
-sustantivo(m,sg)-->[animal].
-sustantivo(f,sg)-->[respuesta].
-sustantivo(f,sg)-->[manzana].
-sustantivo(m,sg)-->[arte].
-sustantivo(m,sg)-->[bebe].
-sustantivo(f,sg)-->[espalda].
-sustantivo(f,sg)-->[bola].
-sustantivo(m,sg)-->[banco].
-sustantivo(f,sg)-->[cama].
-sustantivo(f,sg)-->[factura].
-sustantivo(f,sg)-->[sangre].
-sustantivo(m,sg)-->[barco].
-sustantivo(m,sg)-->[cuerpo].
-sustantivo(m,sg)-->[hueso].
-sustantivo(m,sg)-->[libro].
-sustantivo(f,sg)-->[caja].
-sustantivo(m,sg)-->[hermano].
-sustantivo(m,sg)-->[edificio].
-sustantivo(m,sg)-->[negocio].
-sustantivo(f,sg)-->[llamada].
+sustantivo(n(n_20),m,sg)-->[amor].
+sustantivo(n(n_21),f,sg)-->[accion].
+sustantivo(n(n_22),f,sg)-->[edad].
+sustantivo(n(n_23),m,sg)-->[aire].
+sustantivo(n(n_24),m,sg)-->[animal].
+sustantivo(n(n_25),f,sg)-->[respuesta].
+sustantivo(n(n_26),f,sg)-->[manzana].
+sustantivo(n(n_27),m,sg)-->[arte].
+sustantivo(n(n_28),m,sg)-->[bebe].
+sustantivo(n(n_29),f,sg)-->[espalda].
+sustantivo(n(n_30),f,sg)-->[bola].
+sustantivo(n(n_31),m,sg)-->[banco].
+sustantivo(n(n_32),f,sg)-->[cama].
+sustantivo(n(n_33),f,sg)-->[factura].
+sustantivo(n(n_34),f,sg)-->[sangre].
+sustantivo(n(n_35),m,sg)-->[barco].
+sustantivo(n(n_36),m,sg)-->[cuerpo].
+sustantivo(n(n_37),m,sg)-->[hueso].
+sustantivo(n(n_38),m,sg)-->[libro].
+sustantivo(n(n_39),f,sg)-->[caja].
+sustantivo(n(n_40),m,sg)-->[hermano].
+sustantivo(n(n_41),m,sg)-->[edificio].
+sustantivo(n(n_42),m,sg)-->[negocio].
+sustantivo(n(n_43),f,sg)-->[llamada].
 
 %Pronombres
 
