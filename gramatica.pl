@@ -47,10 +47,10 @@ sustantivo2(n(n_1),m,pl)-->[].
 sustantivo2(n(n_1),f,sg)-->[].
 sustantivo2(n(n_1),f,pl)-->[].
 
-sustantivo2(n(n_2),m,sg)-->sustantivo(m,sg).
-sustantivo2(n(n_2),m,pl)-->sustantivo(m,pl).
-sustantivo2(n(n_2),f,sg)-->sustantivo(f,sg).
-sustantivo2(n(n_2),f,pl)-->sustantivo(f,pl).
+sustantivo2(n(n_2),m,sg)-->sustantivo(n(n_2),m,sg).
+sustantivo2(n(n_2),m,pl)-->sustantivo(n(n_2),m,pl).
+sustantivo2(n(n_2),f,sg)-->sustantivo(n(n_2),f,sg).
+sustantivo2(n(n_2),f,pl)-->sustantivo(n(n_2),f,pl).
 
 
 

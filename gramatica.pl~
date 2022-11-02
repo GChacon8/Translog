@@ -1,3 +1,5 @@
+:-consult(grammar).
+
 oracion(s(S,V,O))-->sn(S,N),verbo(V,N),sn2(O,_).
 sn(np(M,S),N) --> determinante(M,G,N),sustantivo(S,G,N).
 sn2(np(M2,S2),N2) --> determinante(M2,G2,N2),sustantivo2(S2,G2,N2).
@@ -47,18 +49,18 @@ sustantivo2(n(n_1),m,pl)-->[].
 sustantivo2(n(n_1),f,sg)-->[].
 sustantivo2(n(n_1),f,pl)-->[].
 
-sustantivo2(n(n_2),m,sg)-->sustantivo(m,sg).
-sustantivo2(n(n_2),m,pl)-->sustantivo(m,pl).
-sustantivo2(n(n_2),f,sg)-->sustantivo(f,sg).
-sustantivo2(n(n_2),f,pl)-->sustantivo(f,pl).
+sustantivo2(n(n_2),m,sg)-->sustantivo(n(n_2),m,sg).
+sustantivo2(n(n_2),m,pl)-->sustantivo(n(n_2),m,pl).
+sustantivo2(n(n_2),f,sg)-->sustantivo(n(n_2),f,sg).
+sustantivo2(n(n_2),f,pl)-->sustantivo(n(n_2),f,pl).
 
 
 
 %animales
 sustantivo(n(n_3),m,sg)-->[perro].
-sustantivo(n(n_44),m,pl)-->[perros].
-sustantivo(n(n_45),f,sg)-->[perra].
-sustantivo(n(n_46),f,pl)-->[perras].
+sustantivo(n(n_3),m,pl)-->[perros].
+sustantivo(n(n_3),f,sg)-->[perra].
+sustantivo(n(n_3),f,pl)-->[perras].
 
 sustantivo(n(n_4),m,sg)-->[gato].
 sustantivo(n(n_5),f,sg)-->[rata].
