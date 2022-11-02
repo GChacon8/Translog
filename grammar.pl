@@ -1,59 +1,63 @@
-sentence-->sn ,sv.
-sentence-->pronoun, sv.
-sn --> determiner, noun.
-sv --> verb, prepositions, sn.
-sv --> verb, prepositions, verb, sn.
-
+sentence(s(S,V,O))-->sn(S,N) ,verb(V,N),sn2(O,_).
+sn(np(M,S),N) --> determiner(M), noun(S,N).
+sn2(np(M2,S2),N2) --> determiner(M2),noun2(S2,N2).
 %Punctuation
-punctuation-->[,];[].
+%punctuation-->[,];[].
 
 % determiners
-determiner-->[].
-determiner-->[the].
-determiner-->[of].
-determiner-->[tothe].
-determiner-->[it].
-determiner-->[a].
-determiner-->[an].
-determiner-->[some].
-
-%Prepositions
-prepositions-->[].
-prepositions-->[facing].
-prepositions-->[under].
-prepositions-->[fits].
-prepositions-->[with].
-prepositions-->[against].
-prepositions-->[of].
-prepositions-->[from].
-prepositions-->[during].
-prepositions-->[in].
-prepositions-->[between].
-prepositions-->[to].
-prepositions-->[until].
-prepositions-->[through].
-prepositions-->[for].
-prepositions-->[by].
-prepositions-->[without].
-prepositions-->[about].
-prepositions-->[behind].
-prepositions-->[versus].
+determiner(m(art))-->[].
+determiner(m(art))-->[the].
+%determiner(m(art))-->[of].
+%determiner(m(art))-->[tothe].
+%determiner(m(art))-->[it].
+%determiner(m(art))-->[a].
+%determiner(m(art))-->[an].
+%determiner(m(art))-->[some].
 
 %verbs
 
-verb-->[go];[be];[have];[speak];[say];[feel];[take];[see];[walk].
+verb(v(v_1), sg)-->[].
+verb(v(v_1), pl)-->[].
+verb(v(v_2),sg)-->[goes].
+verb(v(v_2),pl)-->[go].
+verb(v(v_3),sg)-->[is].
+verb(v(v_3),pl)-->[are].
+verb(v(v_4),sg)-->[is].
+verb(v(v_4),pl)-->[are].
+verb(v(v_5),sg)-->[has].
+verb(v(v_5),pl)-->[have].
+verb(v(v_6),sg)-->[talks].
+verb(v(v_6),pl)-->[talk].
+verb(v(v_7),sg)-->[says].
+verb(v(v_7),pl)-->[say].
+verb(v(v_8),sg)-->[feels].
+verb(v(v_8),pl)-->[feel].
+verb(v(v_9),sg)-->[takes].
+verb(v(v_9),pl)-->[take].
+verb(v(v_10),sg)-->[sees].
+verb(v(v_10),pl)-->[see].
+verb(v(v_11),sg)-->[walks].
+verb(v(v_11),pl)-->[walk].
+
 
 %nouns
 
-noun-->[].
+noun(n(n_1),sg)-->[].
+noun(n(n_1),pl)-->[].
+
+noun(n(n_2),sg)-->noun(sg).
+noun(n(n_2),pl)-->noun(pl).
+
+
 
 %animals
-noun-->[dog].
-noun-->[cat].
-noun-->[rat].
-noun-->[fish].
-noun-->[mouse].
-noun-->[bird].
+noun(n(n_3),sg)-->[dog].
+noun(n(n_3),pl)-->[dogs].
+noun(n(n_1),pl)-->[cat].
+noun(n(n_1),pl)-->[rat].
+noun(n(n_1),pl)-->[fish].
+noun(n(n_1),pl)-->[mouse].
+noun(n(n_1),pl)-->[bird].
 
 %people
 noun-->[young].
@@ -94,51 +98,3 @@ noun-->[building].
 noun-->[business].
 noun-->[call].
 
-%Pronouns
-
-pronoun-->[].
-pronoun-->[i].
-pronoun-->[you].
-pronoun-->[the].
-pronoun-->[she].
-pronoun-->[we].
-pronoun-->[us].
-pronoun-->[you].
-pronoun-->[you].
-pronoun-->[they].
-pronoun-->[them].
-pronoun-->[you].
-pronoun-->[you].
-pronoun-->[his].
-pronoun-->[me].
-pronoun-->[us].
-pronoun-->[se].
-pronoun-->[my].
-pronoun-->[our].
-
-
-%adverbs
-
-adverb-->[down].
-adverb-->[outside].
-adverb-->[far].
-adverb-->[near].
-adverb-->[above].
-adverb-->[back].
-adverb-->[forward].
-adverb-->[inside].
-adverb-->[perhaps].
-adverb-->[not].
-adverb-->[yes].
-adverb-->[certainly].
-adverb-->[never].
-adverb--> [never].
-adverb-->[lots].
-adverb-->[little].
-adverb-->[less].
-adverb-->[nothing].
-adverb-->[good].
-adverb-->[bad].
-adverb-->[quite].
-adverb-->[yesterday].
-adverb-->[today].
