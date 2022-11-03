@@ -22,7 +22,7 @@ verbo(v(v_1),sg)-->[].
 verbo(v(v_1),pl)-->[].
 %verbo(verbo(X))-->[X],{member(X,[ir,va,voy,vamos,van])}.
 verbo(v(v_2),sg)-->[va].
-verbo(v(v_2),pl)-->[va];[van].
+verbo(v(v_2),pl)-->[van].
 verbo(v(v_3),sg)-->[es].
 verbo(v(v_3),pl)-->[es];[son].
 verbo(v(v_4),sg)-->[esta].
@@ -126,6 +126,8 @@ sustantivo(n(n_24),m,pl)-->[animales].
 
 
 sustantivo(n(n_25),f,sg)-->[respuesta].
+sustantivo(n(n_25),f,pl)-->[respuestas].
+
 sustantivo(n(n_26),f,sg)-->[manzana].
 sustantivo(n(n_26),f,pl)-->[manzanas].
 
@@ -134,6 +136,7 @@ sustantivo(n(n_28),m,sg)-->[bebe].
 sustantivo(n(n_28),m,pl)-->[bebes].
 
 sustantivo(n(n_29),f,sg)-->[espalda].
+
 sustantivo(n(n_30),f,sg)-->[bola].
 sustantivo(n(n_30),f,pl)-->[bolas].
 
@@ -152,7 +155,7 @@ sustantivo(n(n_38),m,pl)-->[libros].
 sustantivo(n(n_39),f,sg)-->[caja].
 sustantivo(n(n_39),f,pl)-->[cajas].
 
-sustantivo(n(n_41),m,sg)-->[edificio].
-sustantivo(n(n_42),m,sg)-->[negocio].
-sustantivo(n(n_43),f,sg)-->[llamada].
+sustantivo(n(n_40),m,sg)-->[edificio].
+sustantivo(n(n_41),m,sg)-->[negocio].
+sustantivo(n(n_42),f,sg)-->[llamada].
 
