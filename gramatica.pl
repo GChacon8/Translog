@@ -136,16 +136,25 @@ sustantivo(n(n_28),m,sg)-->[bebe].
 sustantivo(n(n_28),m,pl)-->[bebes].
 
 sustantivo(n(n_29),f,sg)-->[espalda].
+sustantivo(n(n_29),f,pl)-->[espaldas].
 
 sustantivo(n(n_30),f,sg)-->[bola].
 sustantivo(n(n_30),f,pl)-->[bolas].
 
 sustantivo(n(n_31),m,sg)-->[banco].
+sustantivo(n(n_31),m,pl)-->[bancos].
+
 sustantivo(n(n_32),f,sg)-->[cama].
 sustantivo(n(n_33),f,sg)-->[factura].
 sustantivo(n(n_34),f,sg)-->[sangre].
+
 sustantivo(n(n_35),m,sg)-->[barco].
+sustantivo(n(n_35),m,pl)-->[barcos].
+
 sustantivo(n(n_36),m,sg)-->[cuerpo].
+sustantivo(n(n_36),m,pl)-->[cuerpos].
+
+
 sustantivo(n(n_37),m,sg)-->[hueso].
 sustantivo(n(n_37),m,pl)-->[huesos].
 
