@@ -114,11 +114,5 @@ engtoesp(building, edificio).
 engtoesp(business, negocio).
 engtoesp(call, llamada).
 
-engtoesp(black, negro).
-engtoesp(red, rojo).
-engtoesp(white, blanco).
-engtoesp(blue, azul).
-engtoesp(green, verde).
-engtoesp(yellow, amarillo).
 
 proceso-->engtoesp.

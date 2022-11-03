@@ -1,6 +1,7 @@
 :-consult(gramatica).
 :-consult(diccionario).
 :-consult(grammar).
+
 /*Función iniciar: esta función da inicio a la secuencia que hará las preguntas al usuario.
  *
 Entrada: ninguna.
@@ -49,12 +50,3 @@ traducir1(ENG, ESP) :-
 traducir2(ENG, ESP) :-
     maplist(engtoesp, ENG, ESP),
     phrase(sentence(B),ENG).
-
-/*
-iniciar2():-
-    write("Escriba una palabra"),
-    readln(ORACION,_,_,_,lowercase),
-    oracion(ORACION, []),
-    traducir(ORACION, TRADUCCION),
-    imprimir(TRADUCCION).
-*/
