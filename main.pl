@@ -15,11 +15,12 @@ iniciar():-
     write("Muy bien, indique la palabra u oracion que desea traducir: "),
     readln(SENTENCE,_,_,_,lowercase),
     ( RESPUESTA=:=1 -> %Si RESPUESTA ES 1 (ESPAÑOL)
-    traducir(SENTENCE, ESP),
+    traducir1(SENTENCE, ESP),
+
     write("La traduccion es: "),
     write(ESP)
     ; RESPUESTA =:=2 -> %Si RESPUESTA ES 2 (Inglés)
-    traducir(ENG, SENTENCE),
+    traducir2(ENG, SENTENCE),
     write("La traduccion es: "),
     write(ENG))
     ; %Ninguna de las dos anteriores se cumple
@@ -41,8 +42,13 @@ revisarIdioma(RESPUESTA):-
     revisarIdioma(RESPUESTA),!.
 
 %traducir: Recibe una lista con los elementos a traducir, los traduce y regresa otra lista con los elementos traducidos.
-traducir(ENG, ESP) :-
-    maplist(engtoesp, ENG, ESP).
+traducir1(ENG, ESP) :-
+    maplist(engtoesp, ENG, ESP),
+    phrase(oracion(A),ESP).
+
+traducir2(ENG, ESP) :-
+    maplist(engtoesp, ENG, ESP),
+    phrase(sentence(B),ENG).
 
 /*
 iniciar2():-

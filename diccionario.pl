@@ -39,9 +39,9 @@ engtoesp(is, es).
 engtoesp(are, somos).
 engtoesp(are, son).
 engtoesp(am, estoy).
-engtoesp(is, est�).
+engtoesp(is, esta).
 engtoesp(are, estamos).
-engtoesp(are, est�n).
+engtoesp(are, estan).
 engtoesp(have, tengo).
 engtoesp(has, tiene).
 engtoesp(have, tenemos).
@@ -72,6 +72,9 @@ engtoesp(walk, caminamos).
 engtoesp(walk, caminan).
 
 engtoesp(dog, perro).
+engtoesp(dogs,perros).
+engtoesp(dog,perra).
+engtoesp(dogs,perras).
 engtoesp(cat, gato).
 engtoesp(rat, rata).
 engtoesp(fish, pez).

@@ -1,6 +1,6 @@
 engtoesp(hello, hola).
 engtoesp(hi, hola).
-engtoesp("how are you?" ,"Â¿como esta?").
+
 engtoesp(the, los).
 engtoesp(the, las).
 engtoesp(the, el).
@@ -39,9 +39,9 @@ engtoesp(is, es).
 engtoesp(are, somos).
 engtoesp(are, son).
 engtoesp(am, estoy).
-engtoesp(is, está).
+engtoesp(is, esta).
 engtoesp(are, estamos).
-engtoesp(are, están).
+engtoesp(are, estan).
 engtoesp(have, tengo).
 engtoesp(has, tiene).
 engtoesp(have, tenemos).
@@ -71,7 +71,7 @@ engtoesp(walks, camina).
 engtoesp(walk, caminamos).
 engtoesp(walk, caminan).
 
-engtoesp(dog, [perro]).
+engtoesp(dog, perro).
 engtoesp(cat, gato).
 engtoesp(rat, rata).
 engtoesp(fish, pez).
@@ -110,5 +110,12 @@ engtoesp(box, caja).
 engtoesp(building, edificio).
 engtoesp(business, negocio).
 engtoesp(call, llamada).
+
+engtoesp(black, negro).
+engtoesp(red, rojo).
+engtoesp(white, blanco).
+engtoesp(blue, azul).
+engtoesp(green, verde).
+engtoesp(yellow, amarillo).
 
 proceso-->engtoesp.
