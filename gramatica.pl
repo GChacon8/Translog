@@ -1,5 +1,5 @@
 :-consult(grammar).
-
+% define la estructura de las oraciones
 oracion(s(S,V,O))-->sn(S,N),verbo(V,N),sn2(O,_).
 sn(np(M,S),N) --> determinante(M,G,N),sustantivo(S,G,N).
 sn2(np(M2,S2),N2) --> determinante(M2,G2,N2),sustantivo2(S2,G2,N2).
@@ -22,7 +22,6 @@ determinante(m(art),m,pl)-->[los].
 %verbos
 verbo(v(v_1),sg)-->[].
 verbo(v(v_1),pl)-->[].
-%verbo(verbo(X))-->[X],{member(X,[ir,va,voy,vamos,van])}.
 verbo(v(v_2),sg)-->[va].
 verbo(v(v_2),pl)-->[van].
 verbo(v(v_3),sg)-->[es].
@@ -114,12 +113,12 @@ sustantivo(n(n_17),f,sg)-->[abuela].
 sustantivo(n(n_17),f,pl)-->[abuelas].
 
 sustantivo(n(n_18),m,sg)-->[hermano].
-sustantivo(n(n_18),m,pl)-->[hermanos]
+sustantivo(n(n_18),m,pl)-->[hermanos].
 
 sustantivo(n(n_19),f,sg)-->[hermana].
 sustantivo(n(n_19),f,pl)-->[hermanas].
 
-
+%extras
 sustantivo(n(n_20),m,sg)-->[amor].
 sustantivo(n(n_21),f,sg)-->[accion].
 sustantivo(n(n_22),f,sg)-->[edad].

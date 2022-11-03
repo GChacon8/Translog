@@ -1,3 +1,4 @@
+% Diccionario en el cual estan definidas las palabras y su respectiva traducción
 engtoesp(hello, hola).
 engtoesp(hi, hola).
 engtoesp(everything, pura).

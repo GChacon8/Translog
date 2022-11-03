@@ -88,7 +88,7 @@ noun(n(n_17),pl)-->[grandmothers].
 noun(n(n_18),pl)-->[brothers].
 noun(n(n_19),pl)-->[sisters].
 
-
+%others
 noun(n(n_20),sg)-->[love].
 noun(n(n_21),sg)-->[action].
 noun(n(n_22),sg)-->[age].
