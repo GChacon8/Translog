@@ -17,6 +17,8 @@ determinante(m(art),f,sg)-->[la].
 determinante(m(art),f,pl)-->[las].
 determinante(m(art),m,pl)-->[los].
 
+
+
 %verbos
 verbo(v(v_1),sg)-->[].
 verbo(v(v_1),pl)-->[].
@@ -41,6 +43,9 @@ verbo(v(v_10),sg)-->[ve].
 verbo(v(v_10),pl)-->[ven].
 verbo(v(v_11),sg)-->[camina].
 verbo(v(v_11),pl)-->[caminan].
+
+verbo(v(v_12),sg)-->[pura].
+verbo(v(v_13),sg)-->[vida].
 
 %sustantivos
 
@@ -170,3 +175,9 @@ sustantivo(n(n_42),f,sg)-->[llamada].
 
 sustantivo(n(n_40),m,pl)-->[edificios].
 sustantivo(n(n_42),f,pl)-->[llamadas].
+
+sustantivo(n(n_43),f,pl)-->[vida].
+sustantivo(n(n_44),f,pl)-->[hola].
+sustantivo(n(n_45),f,pl)-->[hola].
+
+

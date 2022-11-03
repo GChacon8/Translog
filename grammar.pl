@@ -8,6 +8,10 @@ nom_p2(np(M2,S2),N2) --> determiner(M2),noun2(S2,N2).
 
 determiner(m(art))-->[].
 determiner(m(art))-->[the].
+determiner(m(art))-->[everything].
+determiner(m(art))-->[good].
+
+
 %determiner(m(art))-->[of].
 %determiner(m(art))-->[tothe].
 %determiner(m(art))-->[it].
@@ -40,6 +44,7 @@ verb(v(v_10),sg)-->[see].
 verb(v(v_11),pl)-->[walks].
 verb(v(v_11),sg)-->[walk].
 
+verb(v(v_12),sg)-->[everything].
 
 %nouns
 
@@ -130,3 +135,7 @@ noun(n(n_39),pl)-->[boxes].
 noun(n(n_40),pl)-->[buildings].
 noun(n(n_41),pl)-->[business].
 noun(n(n_42),pl)-->[calls].
+
+noun(n(n_43),pl)-->[good].
+noun(n(n_44),pl)-->[hi].
+noun(n(n_45),pl)-->[hello].

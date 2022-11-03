@@ -1,5 +1,7 @@
 engtoesp(hello, hola).
 engtoesp(hi, hola).
+engtoesp(everything, pura).
+engtoesp(good, vida).
 
 engtoesp(the, los).
 engtoesp(the, las).
