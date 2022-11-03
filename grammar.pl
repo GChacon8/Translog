@@ -35,8 +35,8 @@ verb(v(v_9),pl)-->[takes].
 verb(v(v_9),sg)-->[take].
 verb(v(v_10),pl)-->[sees].
 verb(v(v_10),sg)-->[see].
-verb(v(v_11),sg)-->[walks].
-verb(v(v_11),pl)-->[walk].
+verb(v(v_11),sg)-->[walk].
+verb(v(v_11),pl)-->[walks].
 
 verb(v(v_12),sg)-->[everything].
 
