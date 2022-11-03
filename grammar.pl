@@ -8,6 +8,8 @@ nom_p2(np(M2,S2),N2) --> determiner(M2),noun2(S2,N2).
 
 determiner(m(art))-->[].
 determiner(m(art))-->[the].
+determiner(m(art))-->[everything].
+determiner(m(art))-->[good].
 
 
 %verbs
