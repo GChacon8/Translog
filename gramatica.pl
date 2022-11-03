@@ -167,3 +167,6 @@ sustantivo(n(n_39),f,pl)-->[cajas].
 sustantivo(n(n_40),m,sg)-->[edificio].
 sustantivo(n(n_41),m,sg)-->[negocio].
 sustantivo(n(n_42),f,sg)-->[llamada].
+
+sustantivo(n(n_40),m,pl)-->[edificios].
+sustantivo(n(n_42),f,pl)-->[llamadas].
