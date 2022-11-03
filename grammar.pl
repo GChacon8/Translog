@@ -35,6 +35,8 @@ verb(v(v_10),sg)-->[see].
 verb(v(v_11),pl)-->[walks].
 verb(v(v_11),sg)-->[walk].
 
+verb(v(v_12),sg)-->[everything].
+
 
 %nouns
 
@@ -125,3 +127,7 @@ noun(n(n_39),pl)-->[boxes].
 noun(n(n_40),pl)-->[buildings].
 noun(n(n_41),pl)-->[business].
 noun(n(n_42),pl)-->[calls].
+
+noun(n(n_43),pl)-->[good].
+noun(n(n_44),pl)-->[hi].
+noun(n(n_45),pl)-->[hello].
