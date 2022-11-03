@@ -45,7 +45,6 @@ verbo(v(v_11),sg)-->[camina].
 verbo(v(v_11),pl)-->[caminan].
 
 verbo(v(v_12),sg)-->[pura].
-verbo(v(v_13),sg)-->[vida].
 
 %sustantivos
 
@@ -179,5 +178,3 @@ sustantivo(n(n_42),f,pl)-->[llamadas].
 sustantivo(n(n_43),f,pl)-->[vida].
 sustantivo(n(n_44),f,pl)-->[hola].
 sustantivo(n(n_45),f,pl)-->[hola].
-
-

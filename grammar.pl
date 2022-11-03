@@ -10,14 +10,8 @@ determiner(m(art))-->[].
 determiner(m(art))-->[the].
 determiner(m(art))-->[everything].
 determiner(m(art))-->[good].
-
-
-%determiner(m(art))-->[of].
-%determiner(m(art))-->[tothe].
-%determiner(m(art))-->[it].
-%determiner(m(art))-->[a].
-%determiner(m(art))-->[an].
-%determiner(m(art))-->[some].
+determiner(m(art))-->[walk].
+determiner(m(art))-->[walks].
 
 %verbs
 
@@ -41,8 +35,8 @@ verb(v(v_9),pl)-->[takes].
 verb(v(v_9),sg)-->[take].
 verb(v(v_10),pl)-->[sees].
 verb(v(v_10),sg)-->[see].
-verb(v(v_11),pl)-->[walks].
-verb(v(v_11),sg)-->[walk].
+verb(v(v_11),sg)-->[walks].
+verb(v(v_11),pl)-->[walk].
 
 verb(v(v_12),sg)-->[everything].
 
@@ -53,7 +47,6 @@ noun2(n(n_1),pl)-->[].
 
 noun2(n(n_2),sg)-->noun(n(n_2),sg).
 noun2(n(n_2),pl)-->noun(n(n_2),pl).
-
 
 
 %animals

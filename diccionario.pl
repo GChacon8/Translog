@@ -68,10 +68,8 @@ engtoesp(see, veo).
 engtoesp(sees, ve).
 engtoesp(see, vemos).
 engtoesp(see, ven).
-engtoesp(walk, camino).
-engtoesp(walks, camina).
-engtoesp(walk, caminamos).
-engtoesp(walk, caminan).
+engtoesp(walk, camina).
+engtoesp(walks, caminan).
 
 engtoesp(dog, perro).
 engtoesp(dogs,perros).
@@ -81,15 +79,15 @@ engtoesp(cat, gato).
 engtoesp(rat, rata).
 engtoesp(fish, pez).
 engtoesp(bird, ave).
-engtoesp(young, joven).
+engtoesp(teenager, joven).
 engtoesp(son, hijo).
 engtoesp(daughter, hija).
-engtoesp(mom, mama).
-engtoesp(dad, papa).
-engtoesp(kid, nino).
+engtoesp(mother, mama).
+engtoesp(father, papa).
+engtoesp(boy, nino).
 engtoesp(girl, nina).
-engtoesp(grandpa, abuelo).
-engtoesp(grandma, abuela).
+engtoesp(grandfather, abuelo).
+engtoesp(grandmother, abuela).
 engtoesp(brother, hermano).
 engtoesp(sister, hermana).
 engtoesp(love, amor).
@@ -105,9 +103,10 @@ engtoesp(back, espalda).
 engtoesp(ball, bola).
 engtoesp(bank, banco).
 engtoesp(bed, cama).
-engtoesp(receipt, factura).
+engtoesp(invoice, factura).
 engtoesp(blood, sangre).
-engtoesp(boat, barco).
+engtoesp(ship, barco).
+engtoesp(ships, barcos).
 engtoesp(body, cuerpo).
 engtoesp(bone, hueso).
 engtoesp(book, libro).
