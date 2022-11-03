@@ -111,7 +111,7 @@ sustantivo(n(n_17),f,sg)-->[abuela].
 sustantivo(n(n_17),f,pl)-->[abuelas].
 
 sustantivo(n(n_18),m,sg)-->[hermano].
-sustantivo(n(n_18),m,pl)-->[hermanos]
+sustantivo(n(n_18),m,pl)-->[hermanos].
 
 sustantivo(n(n_19),f,sg)-->[hermana].
 sustantivo(n(n_19),f,pl)-->[hermanas].
