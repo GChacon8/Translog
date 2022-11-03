@@ -8,12 +8,7 @@ nom_p2(np(M2,S2),N2) --> determiner(M2),noun2(S2,N2).
 
 determiner(m(art))-->[].
 determiner(m(art))-->[the].
-%determiner(m(art))-->[of].
-%determiner(m(art))-->[tothe].
-%determiner(m(art))-->[it].
-%determiner(m(art))-->[a].
-%determiner(m(art))-->[an].
-%determiner(m(art))-->[some].
+
 
 %verbs
 
@@ -90,7 +85,7 @@ noun(n(n_17),pl)-->[grandmothers].
 noun(n(n_18),pl)-->[brothers].
 noun(n(n_19),pl)-->[sisters].
 
-
+%others
 noun(n(n_20),sg)-->[love].
 noun(n(n_21),sg)-->[action].
 noun(n(n_22),sg)-->[age].
